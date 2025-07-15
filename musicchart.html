@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+    <style>
+      body{
+        background-color: #f5e28c;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+  </head>
+  
+  <body>
+    <center>
+      <h1>My Favorite Clipse Songs</h1>
+      <div id="plot"></div>
+      <script>
+        let songs = ["Ace Trumpets", "So Be It", "Chains & Whips"];
+        let views = [2270000, 10635665, 1593563];
+        let trace = {
+          x: songs,
+          y: views,
+          type: "bar"
+        };
+        let data = [trace];
+        Plotly.newPlot("plot", data);
+      </script>
+    </center>
+    <footer>
+      <center>
+        <hr>
+        <p><em>Dr. A's Website &copy; 2025</em></p>
+      </center>
+    </footer>
+  </body>
+</html>
