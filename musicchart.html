@@ -39,6 +39,11 @@
         };
         let data = [trace];
         Plotly.newPlot("plot", data, layout);
+        // Remove bottom padding from the Plotly div
+        const plotlyDiv = document.getElementById('plot');
+        if (plotlyDiv) {
+            plotlyDiv.style.paddingBottom = "0";
+        }
       </script>
     </center>
     <footer>
